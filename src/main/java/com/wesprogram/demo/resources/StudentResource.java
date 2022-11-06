@@ -33,7 +33,7 @@ public class StudentResource {
 		return ResponseEntity.ok().body(list);
 	}
 
-	@GetMapping(value = "/(id)")
+	@GetMapping(value = "/{id}")
 	public ResponseEntity<Student> findById(@PathVariable Long id) {
 
 		Student obj = service.findById(id);
